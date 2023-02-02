@@ -1,0 +1,182 @@
+@font-face {
+    font-family: "star";
+    src: url("fonts/star-trek/starseri.TTF");
+}
+
+body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("img/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    align-items: center;
+}
+main{
+    margin-top: 8rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    background-image: url("img/back.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: rgb(255, 208, 0);
+    font-family: "star";
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2em;
+}
+.headerimg{
+    max-width: 60px;
+}
+#enemigo, #jugador{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#botonera, #botonera_enem{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.cont_boton img{
+    max-width: 100px;
+}
+#jugador .cont_boton{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(255, 208, 0) ;
+    display: flex;
+    align-items: center;
+}
+#enemigo .cont_boton{
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgb(151, 26, 26) ;
+    display: flex;
+    align-items: center;
+}
+
+#menu{
+    width: 40%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0.5rem;
+}
+#menu input{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: 0px;
+}
+#empezar{
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+.ganador_hidden{
+    display: none;
+}
+.ganador_show{
+    height: 30vh;
+    width: 60%;
+    z-index: 999;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.774);
+    border: 5px dashed rgb(87, 83, 83);
+    font-family: "star";
+    font-size: 3em;
+    float: right;
+    top: 40%;
+    left: auto;
+}
+.ganador_show button{
+    border: 0px;
+    background-color: rgb(151, 26, 26);
+    color: white;
+    font-family: "star";
+    padding: 0.5rem;
+    font-size: 1em;
+}
+#ganador_show{
+    text-align: center;
+}
+#empezar, #detener{
+    background-color:rgb(255, 208, 0) ;
+    font-family: "star";
+    padding: 0.5rem;
+    font-size: 1.3em;
+}
+#detener{
+    background-color:rgb(172, 63, 0) ;
+}
+
+#marcador{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    border: 5px dashed rgb(12, 66, 136);
+    background-color:rgba(12, 66, 136, 0.425) ;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+#marcador h2{
+    margin: 0px;
+    font-family: "star";
+    color: white;
+}
+#marcador div{
+    display: flex;
+}
+
+#enemigo .seleccionado{
+    padding: 0.5rem;
+    min-height: 10vh;
+    border: 5px rgb(148, 26, 4) dashed;
+    min-width: 10%;
+    background-color: rgba(190, 40, 40, 0.425);
+    margin: 0.5rem;
+}
+#jugador .seleccionado{
+    padding: 0.5rem;
+    min-height: 10vh;
+    border: 5px rgb(255, 208, 0) dashed;
+    min-width: 10%;
+    background-color: rgba(255, 208, 0, 0.425);
+    margin: 0.5rem;
+}
+#enemigo h2{
+    font-family: "star";
+    color: white;
+
+}
+#jugador h2{
+    font-family: "star";
+}
+
+#enemigo #botonera_enem div.selected, #jugador #botonera div.selected{
+    background-color: purple;
+}
+
+#return{
+
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="manos.js"></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="img/spock_header.png" class="headerimg" alt="">
+        <h1>PIEDRA PAPEL TIJERA LAGARTO SPOCK</h1>
+        <img src="img/lizard_header.png" class="headerimg" alt="">
+    </header>
+    <main>
+        <section id="menu">
+                <input id="input" type="text" name="username" placeholder="Nombre de jugador">
+                <button id="empezar" >Comenzar juego</button>
+                <div id="marcador">
+                    <div>
+                        <h2>ENEMIGO: </h2>
+                        <h2 id="punt_enem"></h2>
+                    </div>
+                    <div>
+                        <h2 id="punt_jug"></h2>
+                        <h2 id="nom_jug" class="jug">JUGADOR</h2>
+                    </div>
+                </div>
+        </section>
+        
+        <section id="enemigo">
+            <h2>ENEMIGO</h2>
+            <div id="botonera_enem">
+
+            </div>
+
+            <div class="seleccionado" id="selec_enem">
+
+            </div>
+
+        </section>
+        <section id="ganador" class="ganador_hidden">
+            <h2 id="ganador_show"></h2>
+            <button id="return">VOLVER A JUGAR</button>
+        </section>
+        <section id="jugador">
+
+            <div class="seleccionado" id="selec_jug">
+
+            </div>
+            <div id="botonera">
+
+            </div>
+            <h2 class="jug">Jugador </h2>
+        </section>
+    </main>
+</body>
+</html>
